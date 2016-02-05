@@ -11,7 +11,7 @@ nfs_export "/exports" do
   options ['fsid=0,insecure,no_subtree_check,async']
 end
 
-environments = ['dev', 'ci', 'intdev', 'sb', 'emerg', 'test', 'devops', 'train', 'sanity']
+environments = ['dev', 'ci', 'intdev', 'sb', 'emerg', 'test', 'devops', 'train', 'sanity', 'image']
 
 environments.each do |env|
   nfs_export "/exports/#{env}" do
