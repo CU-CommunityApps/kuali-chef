@@ -1,0 +1,8 @@
+name 'kuali-nfs-users'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures kuali-nfs-users'
+long_description 'Installs/Configures kuali-nfs-users'
+version '0.1.0'
+depends 'users'
