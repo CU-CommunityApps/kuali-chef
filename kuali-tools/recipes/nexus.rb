@@ -14,7 +14,7 @@ docker_container 'nexus' do
   repo 'dtr.cucloud.net/cs/nexus'
   tag 'latest'
   port '8081:8081'
-  volumes [ '/nexus:/nexus' ]
+  volumes [ '/nexus/cloud_nexus_new:/nexus' ]
   restart_policy 'always'
   log_driver 'syslog'
   action :run_if_missing
