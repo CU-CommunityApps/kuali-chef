@@ -11,12 +11,6 @@ service 'docker' do
   action :start
 end
 
-docker_registry 'https://docker.cucloud.net/' do
-  username node['dtr']['user']
-  password node['dtr']['password']
-  email ''
-end
-
 docker_registry 'https://dtr.cucloud.net/' do
   username node['dtr']['user']
   password node['dtr']['password']
